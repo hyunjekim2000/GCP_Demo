@@ -1,0 +1,30 @@
+{
+  "hosting": {
+    "hosting": {
+      "public": "dist/angular-gcp-demo",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    }
+  },
+  "emulators": {
+    "firestore": {
+      "port": 8080
+    },
+    "hosting": {
+      "port": 5001
+    },
+    "storage": {
+      "port": 9199
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

@@ -1,0 +1,9 @@
+<div>
+  <input type="file" (change)="uploadFile($event)" />
+  <div *ngIf="uploadProgress >= 0">
+    Progress: {{ uploadProgress }}%
+  </div>
+  <div *ngIf="downloadURL">
+    File uploaded! <a [href]="downloadURL" target="_blank">View File</a>
+  </div>
+</div>
